@@ -1,0 +1,43 @@
+
+<html>
+
+	<head>
+	<title>
+		Login page
+	</title>
+	</head>
+
+	<body>
+	
+		<center>
+		<img src="https://scontent-a-ord.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10154891_10202683349395851_4487973881902577037_n.jpg?oh=58c4825fefb9090ebccc579b1f7f4e63&oe=54BAB40F" 
+		alt="Logo" style="width:200px;height:200px">
+		</center>
+
+		<center>
+		<form name="login">
+			User Id<br><input type="text" name="userid"/><br><br>
+			Password<br><input type="password" name="pswrd"/>
+			<br><br><input type="button" onclick="check(this.form)" value="Login"/>
+			<input type="reset" value="Cancel"/>
+		</form>
+		<center>
+		
+		<script language="javascript">
+			function check(form)/*function to check userid & password*/
+			{
+				/*the following code checkes whether the entered userid and password are matching*/
+				if(form.userid.value == "wzs21" && form.pswrd.value == "gundamseed21")
+				{
+					window.open('main screen.html')/*opens the target page while Id & password matches*/
+				}
+				else
+				{
+					alert("Error Password or Username")/*displays error message*/
+				}
+			}
+		</script
+
+		
+	</body>
+</html>
